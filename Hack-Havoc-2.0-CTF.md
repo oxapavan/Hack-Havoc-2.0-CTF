@@ -186,6 +186,6 @@ They clearly menctioned to search about **top threats**, **Vulnerability**, **re
 
 **Top Threats = DarkGate**  
 **Vulnerability = CVE-2024-5217**  
-**regulations = KOPSA**
-Combining this we get flag
-**CM{DarkGate_CVE-2024-5217_KOPSA}**
+**regulations = KOPSA**  
+Combining this we get flag  
+**CM{DarkGate_CVE-2024-5217_KOPSA}**  
