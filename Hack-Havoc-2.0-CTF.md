@@ -174,7 +174,18 @@ After seeing flag format CM{xxxxx_#x_#xxx#_#_x##xxx} i had connected all pieces 
 ---
 
 
+**Category** - **OSINT**
+**Challenge** - **Hack Uncovered**
+> Think you can find the flag buried in a sea of data? This PDF is packed with juicy details about July's 2024 incidents/alerts, but beware 
+> somewhere within lies your prize! Can you navigate the top threats, Vulnerability, and regulations to uncover what’s hidden? and Craft the flag > with the name Put your OSINT skills to the test! 🕵️‍♀️📄              Flag : CM{a_b_c}
 
+I feel my self i sooo good at osint challenges lol 😅 but this osint challenges didn't feel up to the mark.
+Please look challenge file in **Challenge-Files/Hack Uncovered.pdf**
 
+They clearly menctioned to search about **top threats**, **Vulnerability**, **regulations** After calefully reviewing
 
-
+**Top Threats = DarkGate**  
+**Vulnerability = CVE-2024-5217**  
+**regulations = KOPSA**
+Combining this we get flag
+**CM{DarkGate_CVE-2024-5217_KOPSA}**
