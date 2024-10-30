@@ -1,1 +1,0 @@
-# Hack-Havoc-2.0-CTF
