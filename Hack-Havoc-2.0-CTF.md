@@ -1,11 +1,11 @@
-****Welcome to Hack Havoc 2.0 CTF!**  
-Some how i liked  this ctf & Placed in 6TH Position.  
-**what Made me intrest ?**
-Prizes  
-PJPT Certification by TCM  
-HackTheBox Gift Voucher (3 Months VIP) + Ebook  
-Top 10 Participants: 1-hour Career Consultation with Cybersecurity Leader  
-Top 20 Participants: Access to internship opportunities at CyberMaterial and 911Cyber**  
+- **Welcome to Hack Havoc 2.0 CTF!**  
+- Some how i liked  this ctf & Placed in 6TH Position.  
+- **what Made me intrest ?**
+- Prizes  
+- PJPT Certification by TCM  
+- HackTheBox Gift Voucher (3 Months VIP) + Ebook  
+- Top 10 Participants: 1-hour Career Consultation with Cybersecurity Leader  
+- Top 20 Participants: Access to internship opportunities at CyberMaterial and 911Cyber**  
 
 <img src="Images/CTF.jpg" alt="Challenge Image" width="200"/>
 
@@ -344,7 +344,7 @@ I was not able to figure out what to do i thought of executing **shell=0&pwn=1**
 
 
 
-**Challenge** - **Dir Dash**
+**Challenge** - **Dir Dash**  
 
 > Welcome to the wackiest web quest of your life! 🚀 Somewhere in the depths of our webpage jungle you have Me.Let the digital madness begin! 🕵️‍♂️💻💥
 >
@@ -360,7 +360,7 @@ After reading Hint's i got they stressed is **Domain//////hash............extens
 
 
 
-**Challenge** - **Pickle Me This Cookie Jar Shenanigans!**
+**Challenge** - **Pickle Me This Cookie Jar Shenanigans!**  
 
 > Ever wondered what your cookies are hiding? This challenge dives into the mysterious world of serialized cookies with a twist of deserialization vulnerability. Use your Python skills and the pickle module to create a mischievous cart item that leads to a netcat reverse shell. Follow the breadcrumbs, set your traps, and see if you can hack your way to victory
 
@@ -390,4 +390,53 @@ if __name__ == '__main__':
 After executinh rever shell i got controll in flag.md there is a flag **CM{c0Ngr47S_y0u_ArE_A_Ser1A1_KI11er}**
 
 ----------------
+
+ 
+**Category** - **Forensic**  
+**Challenge** - **QR-azy Mystery!**  
+
+> Can you turn this pixel mush into glory?
+
+- Please view file in Challenge-Files/goneeeee.png.
+
+  Easy challenge, I used my phone unblur option on my phone & then scanned with google len's that worked for me.
+
+
+
+**Challenge** - **Dialing for Danger**  
+
+
+>Oops! Two not-so-smooth criminals just spilled the beans during a phone chat on a brick phone! 📞🎶 Crack the location before their next mischief unfolds. Find the place befor attack
+>
+>Flag: Wrap it in CM { First_second_third }
+
+- Access Challenge files in Challenge-Files/4_666_555_3_33_66_0_4_2_8_33_0_22_7.txt
+
+Simple challenge &The given sequence of numbers, 4 666 555 3 33 66 0 4 2 8 33 0 22 777 444 3 4 33, looks like a message encoded using a classic phone keypad system. In this system, each number corresponds to specific letters (e.g., 2 = ABC, 3 = DEF, and so on).
+- 4 666 555 3 33 66 = GOLDEN
+- 4 2 8 33 = GATE
+- 22 777 444 3 4 33 = BRIDGE
+
+**CM{Golden_Gate_Bridge}**
+
+
+
+
+----
+
+
+**Category** - **cloud**  
+**Challenge** - **Cloudy Records**  
+
+> A sensitive data leak has occurred at the fictional company "CloudCorps." As a security expert, your job is to find their exposed Cloud Storage bucket and retrieve the flag.
+>
+> https://hallofhacks.com/
+
+I got fooled in this challenge lol. i useed many tool's like  cloud enum & many online tool's to find upen bucket's nothing worked. I had aked on ctf-general discord group, One guy replyied and asked what you did up to - i said i had finded domain information & enumerating open bucket's And then he said start again from domain information. Then i started digging txt, dns, mail server  records sucessfully in dns records i got a open bucket link ( https://storage.googleapis.com/cloudcorps-important ) in 3rd bucket i got flag - https://storage.googleapis.com/cloudcorps-important/Hall_of_Hacks_2.pdf    **CM{GCP_CloudStorage_Bucket_Challenge_20241018}**
+
+
+
+
+
+
 
