@@ -338,8 +338,25 @@ Hheheh we got a flag   **CTF{3sc4l4t3d_t0_r00t}**
 >
 >https://sites.google.com/cybermaterial.com/hashing-numbers
 
-I was not able to figure out what to do`
+I was not able to figure out what to do i thought of executing **shell=0&pwn=1** didn't worked. After reading Descreption again & One of my friend given Hint to inspect page & i got this.  
+<img src="Images/Hashing Numbers.png" alt="Challenge Image" width="200"/>  
 
+
+
+
+**Challenge** - **Dir Dash**
+
+> Welcome to the wackiest web quest of your life! 🚀 Somewhere in the depths of our webpage jungle you have Me.Let the digital madness begin! 🕵️‍♂️💻💥
+>
+> http://edition1.ctf.cybermaterial.com/
+
+< **Hints** >
+> Hint for Dir Dash Domain//////hash............extensions
+> hash as a directory and extensions with a hash what a combination lol
+> Dir  as a hash  OR  hash as a dir Or extensions  with a hash 
+
+
+After reading Hint's i got they stressed is **Domain//////hash............extensions** So i tried brute force i got http://edition1.ctf.cybermaterial.com/robots.txt in this i got 2 hashes **c5ba7ff1883453170f7590fa689f1f48**, ***M8PQFA3ELTD%4BIA73EZ2** . For *M8PQFA3ELTD%4BIA73EZ2 i was not able decrypt it any way & i thought c5ba7ff1883453170f7590fa689f1f48 is valid. And i brute fourced using this one...... https://github.com/InfoSecWarrior/Offensive-Payloads/blob/main/File-Extensions-Wordlist.txt  
 
 
 
